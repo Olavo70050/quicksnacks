@@ -1,0 +1,108 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #2b2a2a;
+    --botao-laranja: #ec835d; 
+    --cor-de-fundo-primeira: #00060f; 
+    --cor-de-fundo-segunda: #0bdbca; 
+    --fonte-principal: 'Playwrite DE Grund', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--cor-de-fundo-primeira), var(--cor-de-fundo-segunda)); 
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right; 
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-laranja); 
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.container__botao:hover {
+    background-color: #ff6347; 
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--botao-laranja); 
+    color: var(--botao-laranja); 
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.imagem {
+    margin: 1em 0 2em 0;
+}
+
+.caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    display: flex;
+    align-items: center;
+    padding: 2em 10em;
+}
+
+.direita-esquerda {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.esquerda-direita {
+    flex-direction: row;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
